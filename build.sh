@@ -2,6 +2,8 @@
 
 set -e
 
+cd $(dirname $0)/src
+
 langs=(zh-cn en)
 
 for lang in "${langs[@]}"; do

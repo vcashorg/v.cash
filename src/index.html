@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<title>V Cash</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<META NAME=”GOOGLEBOT” CONTENT=”NOARCHIVE”>
+	<meta name="Baiduspider" content="noarchive">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="github-markdown.css">
+</head>
+
+<body>
+
+	<div class="container mx-auto font-mono">
+
+		{SLOT_EN}
+
+		{SLOT_ZH-CN}
+	
+	</div>
+
+	<script>
+		const supportedLangs = ["zh-cn", "en"];
+		let lang = navigator.language || navigator.userLanguage;
+		if (typeof lang == "string") {
+			lang = lang.toLowerCase().replace('_', '-');
+			if (lang.split('-')[0] == 'en') {
+				lang = 'en';
+			}
+			if (lang == "zh-hans") {
+				lang = "zh-cn";
+			}
+		}
+
+		if (supportedLangs.indexOf(lang) == -1) {
+			lang = "en";
+		}
+
+		const content = document.querySelector('.lang-' + lang);
+		if (content) {
+			content.classList.remove('hidden');
+		}
+	</script>
+
+</body>
+
+</html>
