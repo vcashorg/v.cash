@@ -1,5 +1,7 @@
 # VCash
 
+![](v.jpg)
+
 ## What's VCash
 
 VCash is the combined outcome of Bitcoin characteristics integrated with Mimblewimble technology. It inherits Bitcoin’s distribution mechanism and uses Grin's Mimblewimble implementation.
