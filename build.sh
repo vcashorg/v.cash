@@ -2,9 +2,13 @@
 
 set -e
 
-cd $(dirname $0)/src
+cd $(dirname $0)
 
-langs=(zh-cn en)
+rm -rf dist
+cp -r src dist
+cd dist
+
+langs=(en)
 
 for lang in "${langs[@]}"; do
 	file="README.${lang}.md"
@@ -16,5 +20,5 @@ for lang in "${langs[@]}"; do
 	content=`marked "$file"`
 	upper=`echo "$lang" | tr a-z A-Z`
 	slot='{SLOT_'"$upper"'}'
-	replace-in-file "$slot" "<div class=\"markdown-body lang-$lang hidden\">${content}</div>" index.html
+	replace-in-file "$slot" "<div class=\"markdown-body lang-$lang\">${content}</div>" index.html >/dev/null
 done

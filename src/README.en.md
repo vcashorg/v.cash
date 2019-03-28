@@ -1,4 +1,6 @@
-# Vcash
+# VCash
+
+## What's VCash
 
 VCash is the combined outcome of Bitcoin characteristics integrated with Mimblewimble technology. It inherits Bitcoin’s distribution mechanism and uses Grin's Mimblewimble implementation.
                                     
@@ -13,3 +15,7 @@ VCash combines advantages of the two coins. In terms of Bitcoin, it inherits its
 VCash adopts Merged Mining method to mine coins alongside Bitcoin, that is, VCash blocks can be computed whilst computing Bitcoin blocks. In general, POW chains need to take into consideration that there is a 51% risk of attack on the network. Since Bitcoin has the largest number of miners in the world whereby hash power is broadly distributed, VCash can easily obtain most of Bitcoin’s hash power with the support of the Bitcoin mining pool. This means VCash possesses the same level of security as Bitcoin hence launching a 51% attack on it would be equally difficult.
  
 The goal of VCash is to be the most private and secure chain for storing values.
+
+## Download VCash
+
+[https://github.com/vcashorg/vcash](https://github.com/vcashorg/vcash)
