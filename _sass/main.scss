@@ -95,6 +95,10 @@ footer {
   padding-top: 12px;
   background: #000;
   padding-bottom: 132px;
+  background-repeat: no-repeat;
+  background-image: url("/image/background.png");
+  background-size: contain;
+  background-position: center;
 
   .index-logo {
     width: 219px;
