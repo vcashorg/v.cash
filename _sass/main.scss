@@ -157,15 +157,19 @@ footer {
     text-align: center;
     cursor: pointer;
     padding: 30px 30px;
-    width: 255px;
-    height: 300px;
+    width: 250px;
+    height: 330px;
     background:rgba(255,255,255,1);
     box-shadow:0px 0px 8px 0px rgba(4,0,0,0.12);
     border-radius:2px;
+    border: 1px solid transparent;
     transition: 0.3s all ease-in-out;
 
     &:hover {
-      box-shadow:0px 0px 8px 0px rgba(4,0,0,0.26);
+      border:1px solid rgba(255, 149, 2, 1);
+      box-shadow: 0px 0px 11px 0px rgba(4,0,0,0.26);
+      border-radius:2px;
+      //box-shadow:0px 0px 8px 0px rgba(4,0,0,0.26);
     }
 
     &-content {
@@ -236,6 +240,7 @@ footer {
     text-decoration: underline;
     color: #333;
     &:hover {
+      color: rgba(255,149,2,1);
       text-decoration: none;
     }
   }
@@ -261,6 +266,17 @@ footer {
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.icon-arrow-down {
+  background-image: url("/image/arrow-down.png");
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
+  left: 3px;
 }
 
 // about.html
@@ -329,4 +345,83 @@ footer {
 
 .popr_point_top, .popr_point_bottom {
   border-radius: 2px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 170px;
+  box-shadow:0px 0px 8px 0px rgba(4,0,0,0.22);
+  z-index: 1;
+  left: -50px;
+  transition: 0.3s all ease-in-out;
+  font-size:14px;
+  font-family:ArialMT;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+  border-radius: 2px;
+  text-align: center;
+  padding: 8px 15px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 3px 10px;
+  line-height: 40px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid #dddddd80;
+  color: #333 !important;
+  cursor: pointer;
+
+  &:hover {
+    color: #FF9502 !important;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.dropdown-content {
+  transition: 0.3s all ease-in-out;
+}
+
+/* Change color of dropdown links on hover */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown .dropdown-content:after, .dropdown .dropdown-content:before {
+  position: absolute;
+  pointer-events: none;
+  border: solid transparent;
+  bottom: 100%;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.dropdown .dropdown-content:before {
+  border-bottom-color: #fff;
+  border-width: 9px;
+  left: 40%;
+  margin-left: -9px;
 }
