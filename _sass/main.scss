@@ -57,15 +57,20 @@ footer {
 }
 
 .button {
+  cursor: pointer;
   border:1px solid rgba(255, 149, 2, 1);
   border-radius:2px;
   padding: 17px 70px;
+  font-size:18px;
   color: #FF9502;
   transition: 0.3s all ease-in-out;
   text-decoration: none !important;
 
   span {
     color: #FF9502;
+  }
+  &:focus {
+    outline: 0;
   }
   &:hover {
     span {
@@ -78,6 +83,8 @@ footer {
 }
 .button-primary {
   background: #FF9502;
+  color: #fff;
+  font-size:18px;
 
   span {
     color: #fff;
@@ -87,6 +94,51 @@ footer {
     span {
       color: #FF9502;
     }
+    border: 1px solid #FF9502;
+  }
+}
+
+.button2 {
+  cursor: pointer;
+  border:1px solid rgba(255, 149, 2, 1);
+  border-radius:2px;
+  padding: 6px 40px 10px 40px;
+  font-size:18px;
+  color: #FF9502;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none !important;
+  box-shadow:0px 3px 8px 0px rgba(4,0,0,0.14);
+
+  span {
+    color: #FF9502;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    span {
+      color: #FF9502;
+    }
+    color: #FF9502;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+}
+.button2-primary {
+  background: #FF9502;
+  color: #fff;
+  font-size:18px;
+  box-shadow:0px 3px 8px 0px rgba(4,0,0,0.14);
+
+  span {
+    color: #fff;
+  }
+
+  &:hover {
+    span {
+      color: #FF9502;
+    }
+    border: 1px solid #FF9502;
   }
 }
 
@@ -278,6 +330,52 @@ footer {
   top: 3px;
   left: 3px;
 }
+.icon-Android {
+  background-image: url("/image/android.png");
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-iOS {
+  background-image: url("/image/iOS.png");
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-Android1 {
+  background-image: url("/image/android1.png");
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-iOS1 {
+  background-image: url("/image/iOS1.png");
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.button2 .icon-Android,
+.button2 .icon-iOS,
+.button2 .icon-github {
+  position: relative;
+  top: 3px;
+}
+.button2:hover {
+  .icon-Android {
+    background-image: url("/image/android1.png");
+  }
+  .icon-iOS {
+    background-image: url("/image/iOS1.png");
+  }
+}
 
 // about.html
 .about {
@@ -293,6 +391,28 @@ footer {
   background-size: 539px 584px;
   background-repeat: no-repeat;
   background-position: center 18px;
+}
+
+// wallet.html
+.wallet {
+  text-align: center;
+  font-size:16px;
+  font-family:ArialMT;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:28px;
+  padding-top: 95px;
+  padding-bottom: 150px;
+  min-height: 500px;
+
+  background-image: url("/image/vcash-wallet.png");
+  background-size: 770px 595px;
+  background-repeat: no-repeat;
+  background-position: 200px 95px;
+
+  .download {
+    margin-top: 70px;
+  }
 }
 
 // include.html
