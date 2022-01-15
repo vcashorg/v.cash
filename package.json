@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "marked": "^0.6.1",
+    "marked": "^4.0.10",
     "replace-in-file": "^3.4.4"
   },
   "scripts": {
